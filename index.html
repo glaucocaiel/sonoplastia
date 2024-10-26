@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo de Ligação e Desligamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" />
+</head>
+    <body>
+        <!-- Container principal -->
+        <div class="container my-5">
+            <!-- Cabeçalho centralizado e responsivo -->
+            <div id="intro" class="p-5 text-center alert alert-info">
+                <h1 class="display-4">Sequência de Inicialização</h1>
+            </div>
+
+            <!-- Processo para Ligar -->
+            <h2 class="mt-4">Processo para Ligar</h2>
+            <div id="ligar-process" class="row">
+                <div class="col-12 col-md-6 process-item" id="ligar1">1. Ligue a mesa de som <i class="bi bi-power icon"></i></div>
+                <div class="col-12 col-md-6 process-item" id="ligar2">2. Ligue a Régua de Energia <i class="bi bi-lightning-charge icon"></i></div>
+                <div class="col-12 col-md-6 process-item" id="ligar3">3. Ligue os amplificadores <i class="bi bi-sliders2-vertical icon"></i></div>
+                <div class="col-12 col-md-6 process-item" id="ligar4">4. Ligue o computador <i class="bi bi-pc-display icon"></i></div>
+            </div>
+
+            <!-- Processo para Desligar -->
+            <h2 class="mt-4">Processo para Desligar</h2>
+            <div id="desligar-process" class="row">
+                <div class="col-12 col-md-6 process-item process-desligar" id="desligar1">1. Desligue o Computador <i class="bi bi-pc-display icon"></i></div>
+                <div class="col-12 col-md-6 process-item process-desligar" id="desligar2">2. Desligue os Amplificadores <i class="bi bi-sliders2-vertical icon"></i></div>
+                <div class="col-12 col-md-6 process-item process-desligar" id="desligar3">3. Desligue a Régua de energia <i class="bi bi-lightning-charge-fill icon"></i></div>
+                <div class="col-12 col-md-6 process-item process-desligar" id="desligar4">4. Desligue a Mesa de som <i class="bi bi-power icon"></i></div>
+            </div>
+
+            <!-- Informação para verificar se o computador desligou -->
+            <div class="alert alert-warning" role="alert">
+                Cerfifique-se que o computador está completamente desligado para somente depois desligar a régua.
+
+            </div>
+            
+            <!-- Botão para controlar a animação -->
+            <div class="text-center mt-4">
+                <button id="toggleButton" class="btn btn-outline-info btn-lg">Parar Animação</button>
+            </div>
+        </div>
+
+        <!-- Script da animação -->
+        <script src="script.js"></script>
+    
+</body>
+</html>
